@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    padding: .5em;
+    border-bottom: solid 1px black;
+    width: 100%;
+    gap: 2em;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 4em;
+    height: 4em;
+}
+
+
+.college-title{
+    display: flex;
+    flex-grow: 1;
+}
+
+.college-title p{
+    font-size: 1.1rem;
+    font-family: 'Crimson Text', serif;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.container {
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.title p{
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell;   
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.edit-button{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.main {
+    margin: 2em;
+}
+
+.content-1{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100%;
+    gap: 1em;   
+}
+.content-2{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100%;
+    gap: 1em;   
+}
+.item {
+    flex-basis: calc(33.33% - 10px);
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 20em;
+}
+
+
+.item-label{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.item-content{
+    font-weight: 600;
+    font-size: .8em;
+}
+
+.item small{
+    font-size: .5em;
+    font-weight: 400;
+}
+
+.editable {
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+
+.button-editable {
+    color: #fff;
+    background-color: #00E0EA;
+    border: none;
+  }

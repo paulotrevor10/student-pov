@@ -1,0 +1,66 @@
+<app-student-header></app-student-header>
+<div class="container">
+    
+    <div class="main">
+        <div class="heading">
+            <div class="title">
+               <p>Profile Setting</p> 
+            </div>
+            <div class="edit-button">
+                <button (click)="toggleEditable()" type="button" class="btn btn-danger" [ngClass]="{ 'button-editable': isEditable }">{{buttonText}}</button>
+            </div>
+            
+        </div>
+
+        <div class="content-1">
+            <div class="item">
+                <label class="item-label">Group Name</label>
+                <p #groupName class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }" >GroupName</p>
+
+            </div>
+            <div class="item">
+                <label  class="item-label">Course</label>
+                <p #course class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">course</p>
+            </div>
+            <div class="item">
+                <label class="item-label">Year & Section</label>
+                <p #yearSection class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">year_section</p>
+            </div>
+            <div class="item">
+                <label class="item-label">Specialization</label>
+                <p #specialization class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">specialization</p>
+            </div>
+            <div class="item">
+                <label class="item-label">Email</label>
+                <p #email class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">email</p>
+            </div>
+        </div>
+
+        <div class="title mt-4" >
+            <p>Group Details</p> 
+         </div>
+
+        <div class="content-2 mt-2" >
+             <div class="item">
+                <label class="item-label">Group Leader</label>
+                <p #leader class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">group_leader</p>
+            </div> 
+            <div class="item">
+                <label class="item-label">Capstone Adviser
+                   <br> <small><i>(leave blank if you still don’t have a capstone adviser)</i></small>
+                </label>
+                <p #adviser class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">adviser</p>
+            </div>
+            <div class="item">
+                <label class="item-label">Panels <br> </label>
+                <p #panels class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">panels</p>
+            </div>
+            <div class="item">
+                <label class="item-label">Group Members</label>
+                <p #members class="item-content" [contentEditable]="isEditable" [ngClass]="{ 'editable': isEditable }">group_members</p>
+            </div>
+           
+        </div>
+       
+    </div>
+</div>  
