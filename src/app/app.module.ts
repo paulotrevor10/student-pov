@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { StudentModule } from './student/student.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CapstoneTitlesComponent } from './capstone-titles/capstone-titles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent
+    SigninComponent,
+    CapstoneTitlesComponent
   ],
   imports: [
     BrowserModule,
